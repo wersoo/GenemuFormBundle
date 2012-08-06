@@ -327,6 +327,9 @@
                     $field.val(JSON.stringify(terms));
 
                     return false;
+                },
+                change: function() {
+                    $field.val($autocompleter.val());
                 }
             };
 
